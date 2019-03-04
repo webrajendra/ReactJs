@@ -5,10 +5,20 @@ import PropTypes from 'prop-types';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cars: ['s-Bmw', 's-Honda', 's-Audi']
+    }
+  }
   render() {
+    // console.log(this.state.cars);
     return (
       <div className="App">
         <header className="App-header">
+        <ul>{this.state.cars.map(function(item, i) {
+          return <li> {item} </li>
+        })}</ul>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -25,7 +35,8 @@ class App extends Component {
         <p>Prop Number is = {this.props.propNumber}</p>
         <p>Prop String is = {this.props.propString}</p>
         <p>Prop Object is = {this.props.propObject.obj1}</p>
-        <Parent testProperties="dfdfd"/>
+        <p>Cars names are = </p>
+        <Parent testProperties="dfdfd" />
       </div>
     );
   }
