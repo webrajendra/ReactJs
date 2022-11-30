@@ -1,0 +1,57 @@
+.headerWrap {
+  background-color: #1976d2;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+.formWrap {
+  width: 400px;
+  margin: 50px auto;
+}
+.formWrap .MuiButtonBase-root {
+  margin: 10px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.todoListing h2 {
+  color: #1976d2;
+  text-transform: uppercase;
+}
+.todoListing ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todoListing ul li {
+  padding: 15px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.todoListing button {
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+.todoListing button:hover {
+  opacity: 0.8;
+}
+
+.todoListing button.removeSingle {
+  background-color: rgb(152, 6, 6);
+}
+
+.todoListing button.removeAll {
+  background-color: red;
+  float: right;
+}
