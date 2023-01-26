@@ -3,9 +3,10 @@
   padding: 10px;
   border: solid 1px #000;
   width: 200px;
+  font-size: 14px;
 }
 .movieWrap p {
-  margin: 0;
+  margin: 5px 0 0;
 }
 .movieWrap h3 {
   margin: 0;

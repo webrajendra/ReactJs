@@ -4,9 +4,15 @@ function Movie(props) {
       <div className="moviePoster">
         <img src={props.poster} />
       </div>
-      <h3>{props.title}</h3>
-      <p>{props.year}</p>
-      <p>{props.rating}</p>
+      <p>
+        Movie Name: <b>{props.title}</b>
+      </p>
+      <p>
+        Year: <b>{props.year}</b>
+      </p>
+      <p>
+        IMDB Rating: <b> {props.rating}</b>
+      </p>
     </div>
   );
 }
