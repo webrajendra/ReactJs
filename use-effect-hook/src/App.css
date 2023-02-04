@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+h2 {
+  margin: 0;
+}
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  margin: -20px 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  font-weight: 700;
+}
+
+
+header, .row {
+  display: flex;  /* aligns all child elements (flex items) in a row */
+}
+
+.col {
+  flex: 1;        /* distributes space on the line equally among items */
+  padding: 5px;
+  display: flex;
+  border: solid 1px #ddd;
+  margin: 10px;
+}
+
+.imgWrap img {
+  width: 70px;
+  height: 70px;
+}
+
+.userInfo p {
+  margin: 0;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15px;
+}
+
+.apiDataListing {
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  background-color: #ddd;
+  padding: 10px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: solid 1px #000;
+  cursor: pointer;
+  margin: 20px 0;
+}
