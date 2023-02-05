@@ -1,13 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
+  const NavLinkStyle = ({isActive}) => {
+    return {
+      color: isActive ? '#746cef' : '#fff',
+    }
+  }
   return (
     <div className="navWrap">
-      <Link to={"/"}>Home</Link>
-      <Link to={"/about"}>About</Link>
-      <Link to={"/products"}>Products</Link>
-      <Link to={"/contact"}>Contact</Link>
+      <NavLink style={NavLinkStyle} to={"/"}>Home</NavLink>
+      <NavLink style={NavLinkStyle} to={"/about"}>About</NavLink>
+      <NavLink style={NavLinkStyle} to={"/products"}>Products</NavLink>
+      <NavLink style={NavLinkStyle} to={"/contact"}>Contact</NavLink>
     </div>
   );
 }
