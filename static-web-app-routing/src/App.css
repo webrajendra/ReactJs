@@ -33,6 +33,15 @@ h1 {
   color: #746cef;
   margin: 50px 0;
 }
+button {
+  background-color: #09045a;
+  border: solid 1px #ddd;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 h1 img {
   height: 50px;
 }
