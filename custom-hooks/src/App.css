@@ -34,3 +34,7 @@ ul li {
   justify-content: center;
   flex-direction: column;
 }
+
+button {
+  margin: 15px 0;
+}
