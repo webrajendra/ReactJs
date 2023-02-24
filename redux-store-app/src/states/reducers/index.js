@@ -5,13 +5,16 @@ export const incdecSlice = createSlice ({
     initialState: 10,
     reducers: { 
         Inc: (state, action) => {
-            return state += action.payload;
+            return state += 1;
         },
         Dec: (state, action) => {
-            return state -= action.payload;
+            return state -= 1;
+        },
+        Add: (state, action) => {
+            return state += action.payload;
         }
     }
 })
 
-export const {Inc, Dec} = incdecSlice.actions;
+export const {Inc, Dec, Add} = incdecSlice.actions;
 export default incdecSlice.reducer;
