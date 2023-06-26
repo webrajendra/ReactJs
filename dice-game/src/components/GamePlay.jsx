@@ -7,7 +7,6 @@ import { Button } from 'react-bootstrap';
 const GamePlay = () => {
   const [score, setScore] = useState(0);
   const [errorSelectNumber, setErrorSelectNumber] = useState('');
-  const [resetScore, setResetScore] = useState(0);
   const [selectedNumber, setSelectedNumber] = useState();
   const [currentDice, setCurrentDice] = useState(4);
   const [rules, setRules] = useState(false)
