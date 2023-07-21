@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.todoForm {
+  width: 500px;
+  margin: 0 auto;
+}
+.todoForm form {
+  display: flex;
+  flex-direction: column;
+}
+.todoForm form input, textarea, button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-around;
+}
